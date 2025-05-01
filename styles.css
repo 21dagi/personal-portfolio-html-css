@@ -19,7 +19,8 @@ body {
 }
 
 /* Header */
-#header, nav {
+#header,
+nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36,11 +37,11 @@ body {
 }
 
 nav .active {
-  color: #3FA2F6;
+  color: #3fa2f6;
 }
 
 .nav-item:hover {
-  color: #3FA2F6;
+  color: #3fa2f6;
 }
 
 .nav-item:active {
@@ -66,7 +67,7 @@ nav .active {
   z-index: 1;
 }
 
-h1{
+h1 {
   font-size: 4rem;
   font-weight: 800;
   padding: 25px 0;
@@ -75,7 +76,7 @@ h1{
 h3 {
   font-size: 2.3rem;
   font-weight: 800;
-  color: #3FA2F6;
+  color: #3fa2f6;
   padding-bottom: 40px;
 }
 
@@ -93,18 +94,18 @@ p {
   font-weight: 600;
   padding: 15px 0;
   width: 200px;
-  border:none;
+  border: none;
   border-radius: 8px;
   margin-right: 50px;
-  background-color: #3FA2F6;
+  background-color: #3fa2f6;
   margin-bottom: 180px;
   transition: background-color 0.12s, border 0.12s, color 0.21s, padding 0.12s;
 }
 
 .cta .cta-1:hover {
   background-color: transparent;
-  color: #3FA2F6;
-  border: 2px solid #3FA2F6;
+  color: #3fa2f6;
+  border: 2px solid #3fa2f6;
   padding: 13px 0;
 }
 
@@ -115,8 +116,8 @@ p {
 
 .cta .cta-2 {
   background-color: transparent;
-  color: #3FA2F6;
-  border: 2px solid #3FA2F6;
+  color: #3fa2f6;
+  border: 2px solid #3fa2f6;
   padding: 13px 0;
 }
 
@@ -127,29 +128,28 @@ p {
   gap: 25px;
 }
 
-.social-icon{
+.social-icon {
   padding-bottom: 50px;
 }
 
 .social-icon i {
-font-size: 1.2rem;
-color: #3FA2F6;
-border: 1px solid #3FA2F6;
-border-radius: 50px;
-padding: 8px;
-height: 25px;
-width: 25px;
-display: flex;
-align-items: center;
-justify-content: center;
-transition: transform 0.12s, box-shadow 0.12s;
-cursor: pointer;
-
+  font-size: 1.2rem;
+  color: #3fa2f6;
+  border: 1px solid #3fa2f6;
+  border-radius: 50px;
+  padding: 8px;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.12s, box-shadow 0.12s;
+  cursor: pointer;
 }
 
 .social-icon i:hover {
   transform: scale(1.1);
-  text-shadow: 0 0 10px #3FA2F6;
+  text-shadow: 0 0 10px #3fa2f6;
 }
 
 /* Right section */
@@ -160,47 +160,137 @@ cursor: pointer;
 }
 .hero-right:hover {
   background-color: rgba(6, 7, 12, 0.705);
-  box-shadow: 
-    0 0 20px rgb(6, 7, 12),
-    0 0 50px rgb(6, 7, 12),
-    0 0 100px rgb(6, 7, 12),
-    0 0 200px rgb(6, 7, 12);
+  box-shadow: 0 0 20px rgb(6, 7, 12), 0 0 50px rgb(6, 7, 12),
+    0 0 100px rgb(6, 7, 12), 0 0 200px rgb(6, 7, 12);
+}
+/* Services Section */
+#services {
+  padding: 100px 0;
+  text-align: center;
 }
 
+#services h2 {
+  font-size: 2.5rem;
+  color: #3fa2f6;
+  margin-bottom: 50px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.service {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.service i {
+  font-size: 2rem;
+  color: #3fa2f6;
+  margin-bottom: 15px;
+}
+
+.service h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.service p {
+  color: lightgray;
+  font-size: 1rem;
+}
+
+/* Projects Section */
+#projects {
+  padding: 100px 0;
+  text-align: center;
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+  color: #3fa2f6;
+  margin-bottom: 50px;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.project {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.project img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project p {
+  color: lightgray;
+  font-size: 1rem;
+}
 /* Animations */
 @keyframes fadeIn {
-  from{
+  from {
     transform: translateY(40px);
     opacity: 0;
   }
-  to{
+  to {
     transform: translateY(0);
     opacity: 1;
   }
 }
 
 @keyframes fadeInTop {
-  from{
+  from {
     transform: translateY(-100%);
     opacity: 0;
   }
-  to{
+  to {
     transform: translateY(0);
     opacity: 1;
   }
 }
 
 @keyframes backgroundZoom {
-  from{
+  from {
     background-size: 80%;
   }
-  to{
+  to {
     background-size: 100%;
   }
 }
-
-
-
 
 /* Apply Animations */
 h1 {
