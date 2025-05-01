@@ -54,7 +54,7 @@
         <div class="service">
           <i class="fa-solid fa-code"></i>
           <h3>Web Development</h3>
-          <p>Building responsive and modern websites tailored to your needs.</p>
+          <p>Building responsive and modern websites taiored to your needs.</p>
         </div>
         <div class="service">
           <i class="fa-solid fa-mobile-alt"></i>
@@ -150,28 +150,38 @@
       </div>
     </section>
     <section id="contact">
-      <h2>Contact Me</h2>
-      <?php if (isset($_GET['success'])): ?>
-  <p class="success-message">Thank you for your message! I'll get back to you soon.</p>
-<?php endif; ?>
-      <div class="contact-container">
-      <form action="contact.php" method="POST">
-  <div class="form-group">
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" placeholder="Your Name" required />
-  </div>
-  <div class="form-group">
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" placeholder="Your Email" required />
-  </div>
-  <div class="form-group">
-    <label for="message">Message</label>
-    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-  </div>
-  <button type="submit" class="submit-btn">Send Message</button>
-</form>
+  <h2>Contact Me</h2>
+  <?php if (isset($_GET['success'])): ?>
+    <script>
+      alert("Thank you for your message! I'll get back to you soon.");
+    </script>
+  <?php elseif (isset($_GET['error'])): ?>
+    <?php if ($_GET['error'] == 1): ?>
+      <p class="error-message">All fields are required. Please fill out the form completely.</p>
+    <?php elseif ($_GET['error'] == 2): ?>
+      <p class="error-message">Invalid email address. Please enter a valid email.</p>
+    <?php elseif ($_GET['error'] == 3): ?>
+      <p class="error-message">Failed to send your message. Please try again later.</p>
+    <?php endif; ?>
+  <?php endif; ?>
+  <div class="contact-container">
+    <form action="contact.php" method="POST">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required />
       </div>
-    </section>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required />
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+  </div>
+</section>
     <?php include 'footer.php'; ?>
   </body>
   <script src="script.js"></script>
