@@ -237,6 +237,9 @@ p {
   border: 2px solid #3fa2f6;
   border-radius: 5px;
   outline: none;
+  background-color: #e0f7ff; /* Cream blue background */
+  color: #000; /* Black text for better readability */
+  caret-color: #3fa2f6; /* Visible cursor color */
   transition: border-color 0.3s;
 }
 
@@ -278,6 +281,137 @@ p {
 }
 
 .project p {
+  color: lightgray;
+  font-size: 1rem;
+}
+/* About Section */
+#about {
+  padding: 100px 0;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  color: #3fa2f6;
+  margin-bottom: 50px;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.about-text {
+  flex: 1;
+  font-size: 1.2rem;
+  color: lightgray;
+  line-height: 1.8;
+  padding: 20px;
+}
+
+.about-image {
+  flex: 1;
+  text-align: center;
+}
+
+.about-image img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 5px solid #3fa2f6;
+  box-shadow: 0 0 20px rgba(63, 162, 246, 0.5);
+  transition: transform 0.3s;
+}
+
+.about-image img:hover {
+  transform: scale(1.1);
+}
+
+/* Skills Section */
+.skills {
+  margin-top: 50px;
+}
+
+.skills h3 {
+  font-size: 2rem;
+  color: #3fa2f6;
+  margin-bottom: 30px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.skill {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 150px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.skill i {
+  font-size: 2rem;
+  color: #3fa2f6;
+  margin-bottom: 10px;
+}
+
+.skill p {
+  color: lightgray;
+  font-size: 1rem;
+}
+
+/* Timeline Section */
+.timeline {
+  margin-top: 50px;
+}
+
+.timeline h3 {
+  font-size: 2rem;
+  color: #3fa2f6;
+  margin-bottom: 30px;
+}
+
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.timeline-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.timeline-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.timeline-item h4 {
+  font-size: 1.5rem;
+  color: #3fa2f6;
+  margin-bottom: 10px;
+}
+
+.timeline-item p {
   color: lightgray;
   font-size: 1rem;
 }
