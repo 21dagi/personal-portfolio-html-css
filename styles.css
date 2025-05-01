@@ -224,6 +224,27 @@ p {
   margin-bottom: 50px;
 }
 
+/* Search Field */
+.search-container {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#project-search {
+  padding: 10px;
+  width: 50%;
+  font-size: 1rem;
+  border: 2px solid #3fa2f6;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+#project-search:focus {
+  border-color: #3fa2f6;
+  box-shadow: 0 0 10px rgba(63, 162, 246, 0.5);
+}
+
 .projects-container {
   display: flex;
   justify-content: space-around;
